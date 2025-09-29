@@ -13,3 +13,12 @@ img:hover {
   padding: 0;        /* 余白もなくす */
   cursor: pointer;   /* マウスカーソルをポインタにする */
 }
+
+body {
+  display: flex;
+  justify-content: center; /* 横中央 */
+  align-items: center;     /* 縦中央 */
+  height: 100vh;           /* ビューポート全体を高さに */
+  margin: 0;
+  background-color: #000;  /* 背景色はお好みで */
+}
