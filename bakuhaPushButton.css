@@ -1,15 +1,17 @@
 @font-face {
         font-family: 'CP_Font';
-        src: url('CP_Font.otf') format('opentype'),
-             url('CP_Font.woff') format('woff');
+        src: url('CP_Font.woff') format('woff'),
+             url('CP_Font.woff2') format('woff2'),
+             url('CP_Font.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
-    }
+}
 
 img {
     cursor: pointer;
     transition: transform 0.2s;
 }
+
 img:hover {
     transform: scale(1.0);
 }
