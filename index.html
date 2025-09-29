@@ -19,8 +19,12 @@
             <img id="pushButton" src="war_bakuha_switch_off.png" alt="爆破ボタン">
         </button>
         <p class="text-bottom">へいまる爆破ボタン</p>
+        <div class="volume-control">
+            <input id="volumeSlider" class="volume-slider" type="range" min="0" max="100" value="80">
+            <span id="volumeValue">80</span>%
+        </div>
     </div>
-  
+    
     <audio id="boomSound" src="boom.wav" preload="auto"></audio>
 
     <script type="text/javascript" src="bakuhaPushButton.js"></script>
