@@ -1,7 +1,7 @@
 @font-face {
         font-family: 'CP_Font';
-        src: url('CP_Font.otf') format('opentype');
-        src: url('CP_Font.woff') format('woff');
+        src: url('CP_Font.otf') format('opentype'),
+             url('CP_Font.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
@@ -15,21 +15,21 @@ img:hover {
 }
 
 .danger-button {
-    border: none;      /* ボーダーを消す */
-    outline: none;     /* フォーカス時の枠線を消す */
-    background: none;  /* 背景色も消す */
-    padding: 0;        /* 余白もなくす */
-    cursor: pointer;   /* マウスカーソルをポインタにする */
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 body {
     font-family: 'CP_Font', sans-serif;
     display: flex;
-    justify-content: center; /* 横中央 */
-    align-items: center;     /* 縦中央 */
-    height: 100vh;           /* ビューポート全体を高さに */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    background-color: #fff;  /* 背景色はお好みで */
+    background-color: #fff;
 }
 
 .danger-button img {
@@ -46,5 +46,5 @@ body {
     font-family: 'CP_Font', sans-serif;
     font-size: 3rem;
     text-align: center;
-    color: #ff6666; /* 下の文字は赤っぽくして強調してもOK */
+    color: #ff6666;
 }
