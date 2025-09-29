@@ -1,6 +1,7 @@
 @font-face {
         font-family: 'CP_Font';
         src: url('CP_Font.otf') format('opentype');
+        src: url('CP_Font.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
