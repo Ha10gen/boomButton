@@ -50,3 +50,83 @@ body {
     text-align: center;
     color: #ff6666;
 }
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* スライダーと数値の間隔 */
+  margin-top: 20px;
+}
+
+#volumeValue {
+    width: 3ch;             /* 桁数に応じた幅 */
+    text-align: right;      /* 右揃え */
+    display: inline-block;  /* 幅を適用するためにblock系に */
+}
+
+.volume-slider {
+    width: 500px;     /* スライダーの横幅 */
+    height: 25px;     /* スライダーの全体高さ */
+    /*margin-top: 20px;*/
+    -webkit-appearance: none; /* Chrome, Safari */
+    background: #ddd;         /* トラック色 */
+    border-radius: 12px;      /* トラックの丸み */
+}
+
+/* トラックの色調整（Chrome, Safari） */
+.volume-slider::-webkit-slider-runnable-track {
+    height: 10px;
+    background: #f66;
+    border-radius: 5px;
+}
+
+/* つまみのスタイル */
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;      /* つまみの横幅 */
+    height: 30px;     /* つまみの高さ */
+    background: #fff;
+    border: 2px solid #f66;
+    border-radius: 50%;
+    margin-top: -10px; /* トラック中央に合わせる */
+    cursor: pointer;
+}
+
+/* Firefox用 */
+.volume-slider::-moz-range-track {
+    height: 10px;
+    background: #f66;
+    border-radius: 5px;
+}
+.volume-slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 2px solid #f66;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* IE用 */
+.volume-slider::-ms-track {
+    height: 10px;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+.volume-slider::-ms-fill-lower {
+    background: #f66;
+    border-radius: 5px;
+}
+.volume-slider::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 5px;
+}
+.volume-slider::-ms-thumb {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 2px solid #f66;
+    border-radius: 50%;
+    cursor: pointer;
+}
