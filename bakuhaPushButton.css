@@ -20,5 +20,5 @@ body {
   align-items: center;     /* 縦中央 */
   height: 100vh;           /* ビューポート全体を高さに */
   margin: 0;
-  background-color: #000;  /* 背景色はお好みで */
+  background-color: #fff;  /* 背景色はお好みで */
 }
