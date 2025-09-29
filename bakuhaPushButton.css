@@ -1,24 +1,49 @@
+@font-face {
+        font-family: 'CP_Font';
+        src: url('CP_Font.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
 img {
-  cursor: pointer;
-  transition: transform 0.2s;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 img:hover {
-  transform: scale(1.0);
+    transform: scale(1.0);
 }
 
 .danger-button {
-  border: none;      /* ボーダーを消す */
-  outline: none;     /* フォーカス時の枠線を消す */
-  background: none;  /* 背景色も消す */
-  padding: 0;        /* 余白もなくす */
-  cursor: pointer;   /* マウスカーソルをポインタにする */
+    border: none;      /* ボーダーを消す */
+    outline: none;     /* フォーカス時の枠線を消す */
+    background: none;  /* 背景色も消す */
+    padding: 0;        /* 余白もなくす */
+    cursor: pointer;   /* マウスカーソルをポインタにする */
 }
 
 body {
-  display: flex;
-  justify-content: center; /* 横中央 */
-  align-items: center;     /* 縦中央 */
-  height: 100vh;           /* ビューポート全体を高さに */
-  margin: 0;
-  background-color: #fff;  /* 背景色はお好みで */
+    font-family: 'CP_Font', sans-serif;
+    display: flex;
+    justify-content: center; /* 横中央 */
+    align-items: center;     /* 縦中央 */
+    height: 100vh;           /* ビューポート全体を高さに */
+    margin: 0;
+    background-color: #fff;  /* 背景色はお好みで */
+}
+
+.danger-button img {
+    max-width: 500px;
+}
+
+.text-top {
+    font-family: 'CP_Font', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.text-bottom {
+    font-family: 'CP_Font', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ff6666; /* 下の文字は赤っぽくして強調してもOK */
 }
