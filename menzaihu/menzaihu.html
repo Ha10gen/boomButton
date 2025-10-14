@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>免罪符</title>
+    <link rel="stylesheet" href="../bakuhaPushButton.css">
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="https://ha10gen.github.io/boomButton/favicon.ico" type="image/vnd.microsoft.icon">
+    <meta name="author" content="H10DIVE">
+    <meta content="免罪符">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+
+<body>
+    <div class="button-container">
+        <p class="text-top">まあいいや<br>その一言が<br>事故のもと</p>
+        <button id="soundBtn" class="danger-button">
+            <img id="pushButton" src="button_onoff1.png" alt="免罪符">
+        </button>
+        <p class="text-bottom">免罪符</p>
+        <div class="volume-control">
+            <input id="volumeSlider" class="volume-slider" type="range" min="0" max="100" value="80">
+            <span id="volumeValue">80</span>%
+        </div>
+        
+        <input  type="button" onclick="location.href='../index.html'" value="  爆破ボタン  " class="btn">
+    </div>
+    
+    <audio id="boomSound" src="menzaihu.wav" preload="auto"></audio>
+
+    <script type="text/javascript" src="menzaihu.js"></script>
+</body>
+
+</html>
+
+
