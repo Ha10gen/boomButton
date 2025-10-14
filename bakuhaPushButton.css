@@ -17,6 +17,7 @@ img:hover {
 }
 
 .danger-button {
+    text-align: center;
     border: none;
     outline: none;
     background: none;
@@ -29,6 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 100vh;
     margin: 0;
     background-color: #fff;
